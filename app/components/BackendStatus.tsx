@@ -6,7 +6,7 @@ export default function BackendStatus() {
   const [status, setStatus] = useState('Checking...');
 
   useEffect(() => {
-    fetch('http://localhost:8000/health')
+    fetch('http://65.0.125.150/health')
       .then((res) => {
         if (res.ok) {
           setStatus('🟢 Backend Online');
