@@ -21,7 +21,7 @@ export default function DashboardPage() {
   useEffect(() => {
     const fetchStats = async () => {
       try {
-        const res = await fetch("http://localhost:8000/stats");
+        const res = await fetch("http://65.0.125.150/stats");
         if (!res.ok) throw new Error("Failed to fetch stats");
         const data = await res.json();
         
