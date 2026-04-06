@@ -40,7 +40,7 @@ export default function UploadPage() {
       const formData = new FormData();
       formData.append("file", file);
 
-      const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
+      const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || "http://65.0.125.150";
       const res = await fetch(`${backendUrl}/upload`, {
         method: "POST",
         body: formData,
